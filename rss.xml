@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Contoh Feed Atom</title>
+    <link href="https://pengalihanisua.github.io/rss.xml" rel="self"/>
+    <link href="https://pengalihanisua.github.io"/>
+    <updated>2024-10-30T12:00:00Z</updated>
+    <author>
+        <name>Nama Penulis</name>
+    </author>
+    <id>https://pengalihanisua.github.io/</id>
+
+    <entry>
+        <title></title>
+        <link href="https://pengalihanisua.github.io/?page=1"/>
+        <id>https://pengalihanisua.github.io/?page=1</id>
+        <updated>2024-10-30T10:00:00Z</updated>
+    </entry>
+
+    <entry>
+        <title></title>
+        <link href="https://pengalihanisua.github.io/?page=2"/>
+        <id>https://pengalihanisua.github.io/?page=2</id>
+        <updated>2024-10-29T08:30:00Z</updated>
+    </entry>
+</feed>
