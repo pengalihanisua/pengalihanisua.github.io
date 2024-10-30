@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Dynamic Page</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome to My Dynamic Page</h1>
+        <p>Content will change based on the URL.</p>
+    </div>
+
+    <script>
+        // Fungsi untuk menangkap bagian terakhir dari URL
+        function loadDynamicContent() {
+            const path = window.location.pathname;
+            const contentDiv = document.getElementById("content");
+
+            // Cek jika URL berisi "/item/"
+            if (path.startsWith("/item/")) {
+                const itemId = path.split("/").pop(); // Ambil ID item dari URL
+                contentDiv.innerHTML = `<h1>Item ${itemId}</h1><p>This is the content for item ${itemId}.</p>`;
+            } else {
+                contentDiv.innerHTML = "<h1>Home Page</h1><p>This is the default home content.</p>";
+            }
+        }
+
+        // Panggil fungsi saat halaman dimuat
+        loadDynamicContent();
+    </script>
+</body>
+</html>
